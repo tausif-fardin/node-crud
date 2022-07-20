@@ -7,21 +7,11 @@ const app = express();
 
 app.use(bodyParser.json());
 
-//Get
 app.use('/users', usersRoute);
 
 app.get('/', (req, res) => {
     res.send('You just hit  the get method huhu.');
 })
-
-
-
-
-
-
-
-
-
 const PORT = process.env.PORT || 5000
 
 app.listen(PORT, () => {
